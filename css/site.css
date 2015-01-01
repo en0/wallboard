@@ -4,16 +4,47 @@ body {
     background-color: #eee;
 }
 
-#menu {
-    position: fixed;
-    left: 0; right: 0; top: 0;
-    padding: 9px 5px 0px 10px;
-    color: #fff;
+.cursor-pointer { cursor: pointer; }
+
+#top-status {
     background-color: black;
-    box-shadow: 0px 0px 10px #000;
-    z-index: 1;
+    color: #CCC;
 }
 
-#menu .menu-disabled { color: #aaa; cursor: default; }
+#top-status .data-label,
+#top-status .data-point{ 
+    padding: 5px;
+    margin: 3px 0px 3px 0px;
+}
 
-.cursor-pointer { cursor: pointer; }
+#top-status .data-point{ 
+    background-color: #333;
+    border-radius: 5px;
+    border: solid 1px #666;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border: solid 1px #AAA;
+    border-radius: 5px;
+}
+
+#battle {
+    padding: 5px 0px;
+}
+#battle .track {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAGCAIAAAAt7QuIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3gsYAzgDik3KhgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAATUlEQVQoz7WRoQ0AMQwD258mMNg4+2/hGQKv4HlVksMn2bI3sEYBuruq7lpVdTcA2M7Mu5+ZtoEFSHqpIukPiIgXPyKAb00zPdGePvkAv/1H5yeyQY0AAAAASUVORK5CYII=');
+    background-repeat: repeat-x;
+    background-position: left center;
+    display:inline-block; 
+    border-radius: 5px;
+}
+
+#pglist li {
+    width: 100%;
+}
+
+#pglist a {
+    color: black;
+}

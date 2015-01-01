@@ -1,0 +1,47 @@
+<div class='row' id='project'>
+    <div class='col-md-2'>
+        <ul class='list-unstyled nav nav-pills' id='pglist' >
+            <li class='active text-right'><a href>Project A</a></li>
+            <li class='text-right'><a href>Project B</a></li>
+            <li class='text-right'><a href>Project C</a></li>
+            <li class='text-right'><a href>Project D</a></li>
+            <li class='text-right'><a href>Project E</a></li>
+            <li class='text-right'><a href>Project F</a></li>
+            <li class='text-right'><a href>Project G</a></li>
+        </ul>
+    </div>
+    <div class='col-md-10'>
+        <div class='row'>
+            <h4 class='col-md-12 text-center'>First Milestone - 12/02/2014</h4>
+        </div>
+        <div class='row'>
+            <div class='col-md-6'>
+                <nvd3-multi-bar-chart
+                    data="issueData"
+                    id="issues"
+                    height="300"
+                    color='colorFn()'
+                    legendColor='colorFn()'
+                    stacked='false'
+                    showLegend='true'
+                    showXAxis="true"
+                    showYAxis="true">
+                    <svg></svg>
+                </nvd3-multi-bar-chart>
+            </div>
+            <div class='col-md-6'>
+                <nvd3-line-chart
+                    data="burndownData"
+                    id="burndown"
+                    height="300"
+                    color='colorFn()'
+                    legendColor='colorFn()'
+                    showLegend='true'
+                    showXAxis="true"
+                    showYAxis="true">
+                    <svg></svg>
+                </nvd3-multi-bar-chart>
+            </div>
+        </div>
+    </div>
+</div>
